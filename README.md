@@ -27,6 +27,8 @@ fastboot from Google
 
 mdm (motorola device manager) from Motorola
 
+Elevate from Johannes Passing
+
 See original thread for pie root exploit (Moto X / 2013 Droids 4.4.x) -> http://forum.xda-developers.com/moto-x/orig-development/root-4-4-x-pie-motorola-devices-t2771623
 
 
