@@ -18,6 +18,11 @@ BusyBox v1.20.2-Stericson (2012-07-04 21:33:31 CDT) multi-call binary.
 pie.jar compiled by jcase
 root.sh written by jcase
 
+mfastboot from Motorola
+adb from Google
+fastboot from Google
+mdm (motorola device manager) from Motorola
+
 See original thread for pie root exploit (Moto X / 2013 Droids 4.4.x) -> http://forum.xda-developers.com/moto-x/orig-development/root-4-4-x-pie-motorola-devices-t2771623
 
 
