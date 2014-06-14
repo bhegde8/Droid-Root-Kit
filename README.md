@@ -35,6 +35,8 @@ See original thread for pie root exploit (Moto X / 2013 Droids 4.4.x) -> http://
 
 
 **NOTICE**
+YOU MUST HAVE JAVA INSTALLED
+
 This has only been tested to work with Windows. Mac and Linux may not work!
 
 You can get the entire package with the needed binaries in the releases section.
