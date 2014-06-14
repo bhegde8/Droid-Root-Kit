@@ -500,8 +500,88 @@ public class FirmwareChoose extends JFrame implements ActionListener
 		    	 }
 		     
 		}
-		
+		if(e.getSource() == rootButton)
+		{
+			rootButton.setEnabled(false);
+			terminalConnection.setText("Unfourtanetly, this is not a permanent root.\nThat's because the maker of a write protection exploit is not\nallowing anyone to integrate the exploiter in one-click tools.\nI can only root your device whenever you click this button.");
+			try {
+				 
+			      File file = new File("alreadyThere.txt");
+		 
+			      if (file.createNewFile()){
+			    	  
+			    	  if(osIndicator.getText().contains("Windows"))
+			    	  {
+			    		  terminalConnection.setText("push pie.jar");
+			    		  executeCommand("adb.exe push pie.jar /data/local/atvc");
+			    		  
+			    		  terminalConnection.setText("push root.sh");
+			    		  executeCommand("adb.exe push root.sh /data/local/atvc");
+			    		  
+			    		  executeCommand("adb.exe shell chmod 755 /data/local/atvc/root.sh");
+			    		  
+			    		  executeCommand("adb.exe shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("Applied root!");
+			    	  }
+			    	  if(osIndicator.getText().contains("OS X"))
+			    	  {
+			    		  terminalConnection.setText("push pie.jar");
+			    		  executeCommand("./mac/adb push pie.jar /data/local/atvc");
+			    		  
+			    		  terminalConnection.setText("push root.sh");
+			    		  executeCommand("./mac/adb push root.sh /data/local/atvc");
+			    		  
+			    		  executeCommand("./mac/adb shell chmod 755 /data/local/atvc/root.sh");
+			    		  
+			    		  executeCommand("./mac/adb shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("Applied root!");
+			    	  }
+			    	  if(osIndicator.getText().contains("Linux"))
+			    	  {
+			    		  terminalConnection.setText("push pie.jar");
+			    		  executeCommand("./linux/adb push pie.jar /data/local/atvc");
+			    		  
+			    		  terminalConnection.setText("push root.sh");
+			    		  executeCommand("./linux/adb push root.sh /data/local/atvc");
+			    		  
+			    		  executeCommand("./linux/adb shell chmod 755 /data/local/atvc/root.sh");
+			    		  
+			    		  executeCommand("./linux/adb shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("Applied root!");
+			    	  }
+			    	  
+			      }
+			      else
+			      {
+			    	  if(osIndicator.getText().contains("Windows"))
+			    	  {
+			    		  executeCommand("adb.exe shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("Applied root!");
+			    	  }
+			    	  if(osIndicator.getText().contains("Linux"))
+			    	  {
+			    		  executeCommand("./linux/adb shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("applied root!");
+			    	  }
+			    	  if(osIndicator.getText().contains("OS X"))
+			    	  {
+			    		  executeCommand("./mac/adb shell /data/local/atvc/root.sh");
+			    		  terminalConnection.setText("applied root!");
+			    	  }
+			    	  
+			      }
+		 
+		    	} catch (IOException err) {
+			      err.printStackTrace();
+			}
+		 
+		    	
+		}
 	}
+		
+		
+		
+	
 	
 	public static void downloadExe(String uri, String filename) throws MalformedURLException, IOException
     {
