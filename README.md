@@ -35,4 +35,12 @@ See original thread for pie root exploit (Moto X / 2013 Droids 4.4.x) -> http://
 
 
 **NOTICE**
-You can get the entire package with the needed binaries in the releases section. Enjoy!
+This has only been tested to work with Windows. Mac and Linux may not work!
+
+You can get the entire package with the needed binaries in the releases section.
+
+The release package includes two files that you should worry about:
+
+RunForMacLinux.sh - run this if you are using Mac or Linux (untested)
+
+RunForWindows.sh - run this if you are using Windows
