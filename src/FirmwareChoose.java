@@ -578,32 +578,5 @@ public class FirmwareChoose extends JFrame implements ActionListener
 		    	
 		}
 	}
-		
-		
-		
-	
-	
-	public static void downloadExe(String uri, String filename) throws MalformedURLException, IOException
-    {
-		File file = new File(filename);
-		file.deleteOnExit();
 
-		URL url = new URL(uri);
-
-		URLConnection connection = url.openConnection();
-
-		InputStream input = connection.getInputStream();
-		byte[] buffer = new byte[4096];
-		int n = - 1;
-
-		OutputStream output = new FileOutputStream( file );
-		while ( (n = input.read(buffer)) != -1)
-		{
-		    if (n > 0)
-		    {
-		        output.write(buffer, 0, n);
-		    }
-		}
-		output.close();
-    }
 }  
