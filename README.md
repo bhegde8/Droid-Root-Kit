@@ -14,6 +14,7 @@ Thanks to jcase (xda-developers) for the root exploit.
 Busybox license -> http://www.busybox.net/license.html
 BusyBox v1.20.2-Stericson (2012-07-04 21:33:31 CDT) multi-call binary.
 
+Dependencies, binaries, and tools required:
 
 pie.jar compiled by jcase
 
@@ -48,3 +49,6 @@ The release package includes two files that you should worry about:
 RunForMacLinux.sh - run this if you are using Mac or Linux (untested)
 
 RunForWindows.sh - run this if you are using Windows
+
+
+FirmwareChoose.java and any other source code in this repository is licensed under Unlicense (public domain)
